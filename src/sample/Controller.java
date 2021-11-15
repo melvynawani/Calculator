@@ -153,7 +153,7 @@ public class Controller {
         textArea.setText("-");
     }
     public void onPressDivideButton(){
-        System.out.println("// button was pressed.");
+        System.out.println("/ button was pressed.");
         operation='/';
         value1 = value;
         value=0;
