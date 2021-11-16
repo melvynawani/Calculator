@@ -205,7 +205,12 @@ public class Controller {
 
             case '/':
                 System.out.println("Division was carried out");
-                result= value1 / value;
+                if (value == 0){
+                    result = 0;
+                }
+                else {
+                    result = value1 / value;
+                }
                 System.out.println(result);
                 textArea.setText(""+result);
                 value=result;
@@ -231,12 +236,9 @@ public class Controller {
     }
     public void onPressResetButton(){
         System.out.println("The C (Reset) button was pressed");
-        value1AsString="";
-        valueAsString="";
-        valueAsString="";
         value=0;
         value1=0;
-        textArea.setText("");
+        textArea.setText("0");
     }
 
 
